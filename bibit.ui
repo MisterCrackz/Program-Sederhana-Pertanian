@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormBibit</class>
+ <widget class="QWidget" name="FormBibit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1056</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form Input Bibit</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- ==================== FORM INPUT ==================== -->
+   <item>
+    <widget class="QGroupBox" name="groupInput">
+     <property name="title">
+      <string>FORM INPUT BIBIT</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutInput">
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelKode">
+        <property name="text">
+         <string>KODE BIBIT :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="txtKode"/>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelNama">
+        <property name="text">
+         <string>NAMA BIBIT :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="txtNama"/>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelSatuan">
+        <property name="text">
+         <string>SATUAN :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="txtSatuan"/>
+      </item>
+
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelMasuk">
+        <property name="text">
+         <string>BIBIT MASUK :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="txtMasuk"/>
+      </item>
+
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelKeluar">
+        <property name="text">
+         <string>BIBIT KELUAR :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="txtKeluar"/>
+      </item>
+
+      <item row="5" column="0">
+       <widget class="QLabel" name="labelStok">
+        <property name="text">
+         <string>STOK BIBIT :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="txtStok"/>
+      </item>
+
+      <!-- Tombol -->
+      <item row="6" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="layoutButtonInput">
+        <item>
+         <widget class="QPushButton" name="btnNew">
+          <property name="text">
+           <string>NEW</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSave">
+          <property name="text">
+           <string>SAVE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnView">
+          <property name="text">
+           <string>VIEW</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnBack">
+          <property name="text">
+           <string>BACK</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ==================== VIEW DATA ==================== -->
+   <item>
+    <widget class="QGroupBox" name="groupView">
+     <property name="title">
+      <string>VIEW INFORMASI BIBIT</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutView">
+
+      <!-- Search dan tombol view -->
+      <item>
+       <layout class="QHBoxLayout" name="layoutViewButtons">
+        <item>
+         <widget class="QLineEdit" name="txtCari">
+          <property name="placeholderText">
+           <string>Cari...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnEdit">
+          <property name="text">
+           <string>EDIT</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnDel">
+          <property name="text">
+           <string>DELETE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnBackView">
+          <property name="text">
+           <string>BACK</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+
+      <!-- Table Data -->
+      <item>
+       <widget class="QTableWidget" name="tableBibit">
+        <property name="columnCount">
+         <number>6</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Kode</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nama Bibit</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Satuan</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Masuk</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Keluar</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Stok</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

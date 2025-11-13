@@ -1,0 +1,5 @@
+[project]
+name = "PySide Widgets Project"
+
+[tool.pyside6-project]
+files = ["bibit.ui", "database.py", "form.ui", "logika_bibit.py", "main.py"]
